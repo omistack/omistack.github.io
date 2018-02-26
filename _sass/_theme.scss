@@ -6,7 +6,7 @@ html {
     body {
         font-family: 'Lato';
         width: 100%;
-        height: 100%;
+        height: 100.00001%;
         position: relative;
         color: #333;
         .fullheight {
@@ -30,6 +30,8 @@ html {
                 }
                 
                 &:before {
+                    top: 0;
+                    left: 0;
                     height: 100%;
                     width: 100%;
                     content: "";
