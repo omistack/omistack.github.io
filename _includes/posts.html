@@ -1,0 +1,7 @@
+{% for post in site.posts %}
+<div class="slide" style="background-color: {{post.bgcolor}}; color: {{post.color}}">
+    <div class="{{post.classes}}" id="section_{{forloop.index}}">
+      {{post.content}}
+      </div>
+    </div>
+  {% endfor %}

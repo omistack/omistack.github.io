@@ -1,0 +1,23 @@
+<div class="fullheight heading p-5 d-flex justify-content-center align-items-center" id="home">
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand col-3" href="#">omistack.github.io</a>
+
+            <div class="collapse navbar-collapse col-9" id="navbarSupportedContent">
+                <div class="navbar-nav d-flex justify-content-end col-12">
+                    <a class="nav-item nav-link" href="#home">Home</a>
+                    {% for post in site.posts %}
+                    <a class="nav-item nav-link" href="#section_{{forloop.index}}">{{post.title}}</a>
+                    {% endfor%}
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="title">
+    <h1>{{site.title}}</h1>
+    <h3 class="text-center">{{site.description}}</h3>
+    </div>
+</div>
