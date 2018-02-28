@@ -7,4 +7,6 @@ RUN apk add -U build-base && \
 VOLUME /export
 WORKDIR /export
 
-CMD jekyll build --watch
+EXPOSE 4000
+
+CMD jekyll serve --watch --host=0.0.0.0
