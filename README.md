@@ -1,3 +1,3 @@
 # omistack.github.io
 
-Openstack deployments - made cloud-native
+"Cloud Native" OpenStack Deployments
